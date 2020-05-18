@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/logout">
+          Logout
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4"> Foodie-19 </h1>
+      <p class="lead"> Create an Order </p>
+    </div>
+    <div class="offset-1">
+      <button id="order-switch" onclick="toggleTab('order')">Create an Order</button>
+      <button id="reserve-switch" onclick="toggleTab('reserve')">Reserve a Table</button>
+      <button id="view-switch" onclick="toggleTab('view')">View Current Orders</button>
+    </div>
+  </div>
+  <div class="order-container">
+    <div class="row">
+      <div class="offset-1 col-6" id="fill-tables">
+      </div>
+      <div class="offset-1 col-3" id="list-container">
+        <div class="row">
+          <div class="col-12" id="test">
+            <div id="item-list">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12" id="test2">
+            <div id="order-button">
+              <button onclick=completeOrder()>Checkout!</button>
+              <span id="total-price"> Total: $0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="reserve-container">
+    <div class="row">
+      <div class="offset-1 col-4 ">
+        <!-- Reservation Page -->
+        <div class="card">
+          <div class="card-header">
+            Table Reservation
+          </div>
+          <div class="card-body">
+            
+              <div>
+                <label for="reserve-phone">Number of People</label>
+                <input type="number" class="form-control" id="people" name="people">
+              </div>
+              <div>
+                <label for="reserve-email">Time Reserved</label>
+                <input type="text" class="form-control" id="time" name="time">
+              </div>
+              <button type="button" onclick=completeTable()>Submit</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="offset-1 col-4">
+        <table id="tablesTable" class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col-1">#</th>
+                <th scope="col">Details</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody id="fill-tables">
+            </tbody>
+          </table>
+        </div>
+    </div>
+  </div>
+  <div class="view-container">
+    <div class="offset-4 col-4">
+      <table id="ordersTable" class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col-1">#</th>
+              <th scope="col">Details</th>
+              <th scope="col">Status</th>
+              <th scope="col">Action </th>
+            </tr>
+          </thead>
+          <tbody id=fill-cards>
+          </tbody>
+        </table>
+      </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/js/main.js"></script>
+  <link rel="stylesheet" href="stylesheets/style.css">
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+body {
+  background-image: url(/asset/images/restaurant1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+#signUpForm {
+  background-color: white;
+  margin-top: 5%;
+  }
+
+#logInForm {
+  background-color: white;
+  margin-top: 5%;
+}
+
+.jumbotron {
+  background:#7f7f7f;
+  background:rgba(255,255,255,0.7);
+}
+
+tr {
+  background-color: white;
+}
+
+.container-root {
+  border-style: solid;
+  border-color: black;
+  width: 75%;
+  margin: auto;
+}
+
+ol {
+ list-style-type: none;
+}
+
+li {
+  padding-left: 5%;
+}
+
+img {
+  padding-bottom: 20%;
+}
+
+#buy-button {
+  margin-top: 10%;
+}
+
+.card {
+  background:#7f7f7f;
+  background:rgba(255,255,255,0.7);
+}
+
+#fill-tables {
+  padding-top: 1.5%;
+  background-color:white;
+  background:#7f7f7f;
+  background:rgba(255,255,255,0.7);
+}
+
+#list-container {
+  padding: 1.5%;
+  height: 250px;
+  position:relative;
+}
+
+#order-button {
+  position:relative;
+}
+
+#test {
+  background-color: white;
+  background:#7f7f7f;
+  background:rgba(255,255,255,0.7);
+  overflow: scroll;
+  height: 250px;
+}
+
+#test2 {
+  padding: 1.5%;
+  background-color: white;
+  background:#7f7f7f;
+  background:rgba(255,255,255,0.7);
+  margin-top: 5%;
+  height: 45px;
+}
+
+table {
+  background-color:white;
+}
